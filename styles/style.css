@@ -93,7 +93,6 @@ a {
 .courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-column-gap: 30px; */
     gap: 30px;
 }
 
@@ -135,4 +134,23 @@ a {
 .time {
     color: #FF4A60;
     ;
+}
+
+/* Responsive Mobile, Tab and Desktop */
+/* Small / Mobile device */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .course-info {
+        flex-direction: column;
+    }
+    .thumbnail img, .course img {
+        width: 85%;
+    }
+    
 }
