@@ -154,3 +154,21 @@ a {
     }
     
 }
+
+/* Tab device */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .blog, .course-info {
+        flex-direction: column;
+    }
+    .thumbnail img, .course img {
+        width: 85%;
+    }
+}
